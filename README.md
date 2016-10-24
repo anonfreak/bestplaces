@@ -1,4 +1,6 @@
-# BestPlaces
+# BestPlaces 
+![logo](./doku/LogoSmall.png)
+
 Track your favorite places and discover more.
 ## Structure
 Because of our server-client-structure, we decided to use two different repositories to devide server and client, which both are written in different languages. You are able to acces the [client](https://github.com/anonfreak/bestplaces-client) and the [server](https://github.com/anonfreak/bestplaces-server) by using the links.
