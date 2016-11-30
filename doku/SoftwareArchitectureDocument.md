@@ -8,7 +8,7 @@ The scope is to show and explain the architecture of BestPlaces, as well as the 
 we provide class-diagramms, the use-case and the actutal flow of events.
 ### Definitions, Acronyms and Abbreviations
 ### References
-[API-Documentation][http://docs.bestplaces.apiary.io/]
+[API-Documentation](http://docs.bestplaces.apiary.io/)
 ### Overview
 ## Architectural Representation
 As descriped in several documents and blog posts, we will use a server-client-structure, which provides clean seperation of data ware house (model), bussiness logic (Controller) and the actual Client application (View). We will use MVC in both parts of our applications to provide easy customization, as well as future-ready implementation for other clients.
@@ -48,5 +48,7 @@ As descriped above we will use a server-client structure, which is implemented i
 For the MySQL-database we tried to keep it as small as possible by merging several aspects together in one model. In the following diagramm, you're able to see all our models in the database:
 ![MySQL data-model](./MySQLdatamodell.png)
 ## Size and Performance
-
+The size of the project itself isn't important, as it runs on a server, which provides lots of data storage and the user hasn't do download anything. Concerning the database, we are not able to provide a big-data like data storage on places, because this is way too expensive and slows down the whole application.
+Nevertheless, due to the fact that the server is located in Frankfurt data center, it should provide fast access time for europe and west-usa. Moreover, requests to Google Places API should be fast, as Google provides a great and fast infrastructure all over the world.
+Because of the fact, we use a fix linux-server we're not scalable at all and we're able to handle as many users as resource available.
 ## Quality
