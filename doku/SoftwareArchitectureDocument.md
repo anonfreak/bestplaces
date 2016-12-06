@@ -24,9 +24,11 @@ On the client side, which will be written in Java, we do not need heavy framewor
 ### Favorite
 To better understand our models and why we have so many of them for the same purpose, let's have a look at the Favorite-use-case.
 As described in the use-case documentation, favorites for places can be set by the user. Therefore there is a user-place relationship in the database. Because we always want to pull latest information from Google Places API, we have to get the place-information from the Google Places API, using an API-call. This returns a JSON of many informations, which will be reduced and fitted into our smaller model. After that we need to determine, there's no different information provided by our user in our MySQL-Database, which corrected this data. If so they will be merged and send to the client as a list of places.
-The client itself has to map this JSON-models on Java-models to present them. Therefore we use a serialization library, which simplifys and automates this process.
+The client itself has to map this JSON-models on Java-models to present them. Therefore we use jackson as an object-mapper, which simplifys and automates this process.
 ## Logical View
 ### Overview
+As descriped above, we're having several MVC-patterns. The most important and most effective one is the MVC-Pattern of the server, because the whole magic happens there. Below you can see the class-diagram of our django-based server. The marked regions emphasize the models, controllers and views.
+![Server MVC](./serverClassDiagram.png)
 ### Architecturally Significant Design Packages
 ## Process View
 ### ODOD process
@@ -39,11 +41,7 @@ Everybody on the web is able to communicate with our API, by following our API-D
 ### Client
 The Client is deployed as a war-file to our self-hosted Apache Tomcat server. To deploy to this server, there is an easy maven script in the IntelliJ-IDE, which directly builds, pushs and deploys the war to the server and immideiatly run it there.
 ## Implementation View
-### Overview
-As descriped above we will use a server-client structure, which is implemented in many different ways.
-### Layers
-#### Server
-#### Client
+As descriped above we will use a server-client structure, which is implemented in different ways. To know more about it just read the explaination at the top.
 ## Data View
 For the MySQL-database we tried to keep it as small as possible by merging several aspects together in one model. In the following diagramm, you're able to see all our models in the database:
 ![MySQL data-model](./MySQLdatamodell.png)
