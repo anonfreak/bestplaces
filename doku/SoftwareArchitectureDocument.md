@@ -37,9 +37,12 @@ ODOD means on-demand-own-data, which is used to keep our database as small as po
 Our application will be deployed on a self-hosted linux-server, which provides full control over our application to track bugs and to keep data safe on our servers.
 ### Server
 The server will be deployed as a django-aplication, which mainly contains all python-scripts pushed to GitHub. Our server listens for changes on the master branch of the server repository and if there is a change, it will automatically clone the repository and run the server.
-Everybody on the web is able to communicate with our API, by following our API-Description. Nevertheless, you need user credentials to use the API. This ensures that user data is safe.
+Everybody on the web is able to communicate with our API, by following our API-Description. Nevertheless, you need user credentials to use the API. This ensures that user data is safe. Below this process is depicted to better understand it.
+![Deployment View Server](./deploymentViewServer.png)
 ### Client
-The Client is deployed as a war-file to our self-hosted Apache Tomcat server. To deploy to this server, there is an easy maven script in the IntelliJ-IDE, which directly builds, pushs and deploys the war to the server and immideiatly run it there.
+The Client is deployed as a war-file to our self-hosted Apache Tomcat server. To deploy to this server, there is an easy maven script in the IntelliJ-IDE, which directly builds, pushs and deploys the war to the server and immediatly run it there.
+Also this process is depicted below:
+![Deployment View Client](./deploymentViewClient.png)
 ## Implementation View
 As descriped above we will use a server-client structure, which is implemented in different ways. To know more about it just read the explaination at the top.
 ## Data View
