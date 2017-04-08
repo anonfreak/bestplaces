@@ -5,10 +5,13 @@ This use-case will be used in multiple Use-Cases, which will follow and is a maj
 Therefore it's the second most import part of our application, right after the Timeline. It's used to display and edit Information on Places. That's why it is needed everywhere, you can display Places and their information.
 ## Flow of Events
 ### Basic flow
+![Flow Diagram](PlacesViewFlow.png)
 ### Feature-files
+![Feature File](PlacesFeature.PNG)
 ### Mock-Ups
 ![Mock-Up](PlacesViewMockUp.png)
 ## Special Requirements
+n/a
 ## Preconditions
 ### Valid log-in
 The User has to be signed-up and logged-in.
