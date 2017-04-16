@@ -1,4 +1,4 @@
-#Software Requirements Specification
+# Software Requirements Specification
 ## Introduction
 ### Purpose
 This SRS will further define our Project and the requirements.
