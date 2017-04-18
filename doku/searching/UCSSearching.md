@@ -6,7 +6,7 @@ looking for into the search field. After typing and issuing enter, the result sh
 able to select a result to get further information about that place.
 ## Flow of Events
 ### Basic Flow
-![Basic Event-flow](SearchingFLow.png)  
+![Basic Event-flow](SearchingFlow.png)  
 This is the Activity Diagram for this Use-Case.  
 
 ![Feature](SearchingFeature.png)  
