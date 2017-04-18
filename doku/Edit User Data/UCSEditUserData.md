@@ -6,10 +6,13 @@ must not change because it’s a primary key in our data base.
 ## Flow of Events
 ### Basic Flow
 This is the activity diagram for the use-case:
+
 ![Basic Event-flow](FlowEditUserData.png)
 Mockup:
+
 ![MockUp](MockUpEditUserData.png)
 Feature File:
+
 ![Feature-file](FeatureEditUserData.png)
 ### Alternative Flows
 n/a
