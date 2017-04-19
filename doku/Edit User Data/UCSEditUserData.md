@@ -27,4 +27,15 @@ The changed information of the user should be saved in our database.
 ### Go back to Timeline
 After saving the data, the user will be navigated back to the Timeline.
 ## Extension Points
-n/a
+### Function Points
+| Transaction | DET | RET | FTR | Complexity | Number of | Comment |
+| ----------- | --- | --- | --- | ---------- | --------- | ------- |
+| EI | 8 | 1 | 1 | low | 1 |  |
+| EO | 8 | 1 | 1 | low | 1 |  |
+| EQ |  |  |  |  | 0 |  |
+| ILF | 8 | 1 |  | low | 1 |  |
+| EIF |  |  |  |  | 0 |  |
+
+| Function Points | Time | Estimation |
+| --------------- | ---- | ---------- |
+| 14,42 | 8:16 |  |
