@@ -21,3 +21,15 @@ The User has selected a Place, he wants to have more information about. In this 
 User goes back to the search results.
 ## Extension Points
 From here, you're able to add a this Place to a visit or add it to you Favorites. These features will be described in the "Add Visit/Favorite" UseCase-Document.
+### Function Points
+| Transaction | DET | RET | FTR | Complexity | Number of | Comment |
+| ----------- | --- | --- | --- | ---------- | --------- | ------- |
+| EI |  |  |  |  | 0 |  |
+| EO | 6-19 |  | 1 | avg | 1 | Information is not the same for all places + calculating operations etc for displaying information |
+| EQ |  |  |  |  | 0 |  |
+| ILF |  |  |  |  | 0 |  |
+| EIF | 51+ | 1 |  | avg | 1 | One Interface from Google, but many Informations |
+
+| Function Points | Time | Estimation |
+| --------------- | ---- | ---------- |
+| 12,36 |  | 13:06 |
