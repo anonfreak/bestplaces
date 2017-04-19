@@ -34,4 +34,15 @@ If the user found the place, he is searching for, he will be able to select it a
 If the user didn’t found his place by searching, the result list will disappear and the timeline is shown. From there he
 will be able to add his place to the database.
 ## Extension Points
-n/a
+### Function Points
+| Transaction | DET | RET | FTR | Complexity | Number of | Comment |
+| ----------- | --- | --- | --- | ---------- | --------- | ------- |
+| EI |  |  |  |  | 0 |  |
+| EO |  |  |  |  | 0 |  |
+| EQ | 25 | 1 | 1 | avg | 1 | 20 Ergebnisse, 5 Eingabefelder |
+| ILF |  |  |  |  | 0 |  |
+| EIF | 10 | 1 |  | low | 1 | Google Response max. 10 results |
+
+| Function Points | Time | Estimation |
+| --------------- | ---- | ---------- |
+| 9,42 |  | 8:37 |
