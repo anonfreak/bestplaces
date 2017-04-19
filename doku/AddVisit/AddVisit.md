@@ -20,4 +20,15 @@ The User has searched for and selected a Place, he wants to visit.
 ## Postconditions
 The Visit is stored to the database and is now available in the Timeline View, where he is able to provide further information to the visit.
 ## Extension Points
-n/a
+### Function Points
+| Transaction | DET | RET | FTR | Complexity | Number of | Comment |
+| ----------- | --- | --- | --- | ---------- | --------- | ------- |
+| EI | 3 | 1 |  | low | 1 |  |
+| EO |  |  |  |  | 0 |  |
+| EQ |  |  |  |  | 0 |  |
+| ILF | 4 |  | 2 | low | 1 |  |
+| EIF |  |  |  |  | 0 |  |
+
+| Function Points | Time | Estimation |
+| --------------- | ---- | ---------- |
+| 10,3 |  | 9:58 |
