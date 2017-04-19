@@ -8,7 +8,7 @@ and see more older places.
 ![Basic Event-flow](TimelineFlow.png)  
 This is the Activity Diagram for showing the visits in the Timeline.  
 
-![Feature](ViewTimelineFeature.png)  
+![Feature](ViewTimelineFeature.PNG)  
 The feature file for “View Timeline”.  
 
 ![MockUp](MockUpTimeline.JPG)  
@@ -26,4 +26,15 @@ Furthermore, he needs to have at least one visit in his timeline to be able to s
 ### Scrollable
 If the user has more than 10 visits, he should be able to scroll and load more visits. 
 ## Extension Points
-n/a
+### Function Points
+| Transaction | DET | RET | FTR | Complexity | Number of | Comment |
+| ----------- | --- | --- | --- | ---------- | --------- | ------- |
+| EI |  |  |  |  | 0 |  |
+| EO |  |  |  |  | 0 |  |
+| EQ | 2 |  | 2 | low | 1 | daten lesen/anzeigen |
+| ILF | 10 | 1 |  | low | 1 | visit daten |
+| EIF | 10 | 1 |  | low | 1 | google daten |
+
+| Function Points | Time | Estimation |
+| --------------- | ---- | ---------- |
+| 15,45 |  | 17:49 |
