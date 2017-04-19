@@ -30,4 +30,15 @@ If saving was successful, the user should get a message, that everything is fine
 ### Go on
 After the message the user should have the possibility to log in.
 ## Extension Points
-n/a
+### Function Points
+| Transaction | DET | RET | FTR | Complexity | Number of | Comment |
+| ----------- | --- | --- | --- | ---------- | --------- | ------- |
+| EI | 8 | 1 | 1 | low | 1 |  |
+| EO |  |  |  |  | 0 |  |
+| EQ |  |  |  |  | 0 |  |
+| ILF | 8 | 1 |  | low | 1 |  |
+| EIF |  |  |  |  | 0 |  |
+
+| Function Points | Time | Estimation |
+| --------------- | ---- | ---------- |
+| 10,3 | 13:10 |  |
