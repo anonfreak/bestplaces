@@ -39,4 +39,17 @@ If the user adds a Visit, the visit will appear in the Timeline.
 ### Delete Visit
 If the user deletes a favorite, it will disappear in the Timeline.
 ## Extension Points
-n/a
+### Function Points
+| Transaction | DET | RET | FTR | Complexity | Number of | Comment |
+| ------- | ----------- | --------- | ------- | ----------- | --------- | -------|
+
+| EI | 9 | - | 1 | low| 1 | 3Button/6Eingsbefelder bei bearbeiten |
+| EO | 6 | - | 1 | low| 2 | |
+| EQ | - | - | - | | 0 | |
+| ILF | 10 | 1 | - | low| 1 | |
+| EIF | 10 | 1 | - | low| 1 | |
+
+| Function Points | 23,69 |
+| Time | |
+| Estimation | 30:22 |
+
