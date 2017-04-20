@@ -9,7 +9,7 @@ of that, this Use-Case is a CRUD.
 Basically this Activity Diagram is like the Diagram of Manage Favorites. It shows how the different parts
 of Manage Visits stick together. The single diagrams of the Use Cases will follow later.
 
-![Feature](ManageVisitFeature.png)  
+![Feature](ManageVisitFeature.PNG)  
 The feature file, which goes with the CRUD for managing favorites.
 
 ![MockUp](../ViewTimeline/MockUpTimeline.JPG)  
