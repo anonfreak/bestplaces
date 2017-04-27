@@ -259,14 +259,14 @@ Human Resources
 
 | Role | Minimum Resources Recommended(number of full-time roles allocated) | Specific Responsibilities or Comments |
 | ---- | ------------------------------------------------------------------ | ------------------------------------- |
-| Test Manager | | Provides management oversight. Responsibilities include: * planning and logistics * agree mission * identify motivators * acquire appropriate resources * present management reporting * advocate the interests of test * evaluate effectiveness of test effort |
-| Test Analyst | | Identifies and defines the specific tests to be conducted. Responsibilities include: * identify test ideas * define test details * determine test results * document change requests * evaluate product quality |
-| Test Designer | | Defines the technical approach to the implementation of the test effort. Responsibilities include: •	define test approach •	define test automation architecture •	verify test techniques •	define testability elements •	structure test implementation |
-| Tester | | Implements and executes the tests. Responsibilities include: •	implement tests and test suites •	execute test suites •	log results •	analyze and recover from test failures •	document incidents |
-| Test System Administrator | | Ensures test environment and assets are managed and maintained. Responsibilities include: • 	administer test management system •	install and support access to, and recovery of, test environment configurations and test labs |
-| Database Administrator, Database Manager | | Ensures test data (database) environment and assets are managed and maintained. Responsibilities include: •	support the administration of test data and test beds (database).|
-| Designer | | Identifies and defines the operations, attributes, and associations of the test classes. Responsibilities include: •	defines the test classes required to support testability requirements as defined by the test team |
-| Implementer |	| Implements and unit tests the test classes and test packages. Responsibilities include: •	creates the test components required to support testability requirements as defined by the designer |
+| Test Manager | | Provides management oversight. Responsibilities include: <ul><li> planning and logistics</li> <li>agree mission </li><li> identify motivators </li> <li>acquire appropriate resources</li><li>present management reporting</li><li>advocate the interests of test</li><li>evaluate effectiveness of test effort</li></ul> |
+| Test Analyst | | Identifies and defines the specific tests to be conducted. Responsibilities include: <ul><li>identify test ideas </li><li>define test details</li><li>determine test results</li><li>document change requests</li><li>evaluate product quality</li></ul>|
+| Test Designer | | Defines the technical approach to the implementation of the test effort. Responsibilities include: <ul><li>define test approach</li><li>define test automation architecture</li><li>verify test techniques</li><li>define testability elements</li><li>structure test implementation</li></ul>|
+| Tester | | Implements and executes the tests. Responsibilities include:<ul><li>implement tests and test suites</li><li>execute test suites</li><li>log results</li><li>analyze and recover from test failures</li><li>document incidents</li></ul>|
+| Test System Administrator | | Ensures test environment and assets are managed and maintained. Responsibilities include:<ul><li>administer test management system</li><li>install and support access to, and recovery of, test environment configurations and test labs</li></ul>|
+| Database Administrator, Database Manager | | Ensures test data (database) environment and assets are managed and maintained. Responsibilities include: <ul><li>support the administration of test data and test beds (database)</li></ul>|
+| Designer | | Identifies and defines the operations, attributes, and associations of the test classes. Responsibilities include:	defines the test classes required to support testability requirements as defined by the test team |
+| Implementer |	| Implements and unit tests the test classes and test packages. Responsibilities include:<ul><li>creates the test components required to support testability requirements as defined by the designer</li></ul> |
 
 ### 10.2	Staffing and Training Needs
 This section outlines how to approach staffing and training the test roles for the project.
@@ -296,9 +296,9 @@ This section outlines how to approach staffing and training the test roles for t
 
 | Risk | Mitigation Strategy | Contingency (Risk is realized) |
 | ---- | ------------------- | ------------------------------ |
-| Prerequisite entry criteria is not met. |	<Tester> will define the prerequisites that must be met before Load Testing can start <Customer> will endeavor to meet prerequisites indicated by <Tester>. |•	Meet outstanding prerequisites •	Consider Load Test Failure |
-| Test data proves to be inadequate.|<Customer> will ensure a full set of suitable and protected test data is available. <Tester> will indicate what is required and will verify the suitability of test data.|•	Redefine test data •	Review Test Plan and modify •	components (that is, scripts) •	Consider Load Test Failure|
-|Database requires refresh.| <System Admin> will endeavor to ensure the Database is regularly refreshed as required by <Tester>.| •	Restore data and restart •	Clear Database|
+| Prerequisite entry criteria is not met. |	<Tester> will define the prerequisites that must be met before Load Testing can start <Customer> will endeavor to meet prerequisites indicated by <Tester>. |<ul><li>	Meet outstanding prerequisites</li><li>Consider Load Test Failure</li></ul>|
+| Test data proves to be inadequate.|<Customer> will ensure a full set of suitable and protected test data is available. <Tester> will indicate what is required and will verify the suitability of test data.|<ul><li>Redefine test data</li><li>Review Test Plan and modify	components (that is, scripts)</li><li>	Consider Load Test Failure</li></ul>|
+|Database requires refresh.| <System Admin> will endeavor to ensure the Database is regularly refreshed as required by <Tester>.| <ul><li>	Restore data and restart</li><li>Clear Database</li></ul>|
 
 |Dependency between|Potential Impact of Dependency|Owners|
 |------------------|------------------------------|------|		
