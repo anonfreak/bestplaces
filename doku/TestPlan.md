@@ -3,23 +3,50 @@
 ### 1.1	Purpose
 The purpose of the Iteration Test Plan is to gather all of the information necessary to plan and control the test effort for a given iteration. It describes the approach to testing the software, and is the top-level plan generated and used by managers to direct the test effort.
 This Test Plan for the BestPlaces - Project supports the following objectives:
-* decrease and minimise the number of mistakes and bugs
-* provide the users a comfortable and flawless use
-* testing frontend and backend
+* Decrease and minimise the number of mistakes and bugs
+* Provide the users a comfortable and flawless use
+* Automated backend and frontend testing
 
 ### 1.2	Scope
+*Integration Testing*
+* Dredd will use the sample data provided in API Blueprint to test against the real API
+* UI-Testing with Cucumber supported by the feature-files
+* TeamCity for automated testing while deploying
+
+*Unit tests*
+* Unit Tests in the backend with Django
+* Unit Tests in the frontend with JUnit
 
 ### 1.3	Intended Audience
+* Students
+* Professors
+* Programmer
 
 ### 1.4	Document Terminology and Acronyms
+n/a
 
 ### 1.5	 References
+n/a
 
 ### 1.6	Document Structure
+tc
 
 ## 2.	Evaluation Mission and Test Motivation
-
+Testing provides better usabilty for the user and enables developers to check if their code will work even after something changed.
 ### 2.1	Background
+By testing our project we provide:
+* Test if implementation is correct
+
+   Before developing a feature, you'll have to define what it should do. Therefore, you can write a test which checks if the implementation fits the requirements, defined before.
+  
+* Test the changes
+
+   If you change something in your code, your API or your database, you can check with your unit tests, which were written before the change if all your components can work with this change. If not, you're able to improve your functions by coding till your tests are green
+
+* Deploy only if tests pass
+
+   With automated testing, you're able to check if the application is working properly. Only if everything works, your application will be deployed and public to the real users. So the user always has the guarantee, that the application will worl properly.
+   
 
 ### 2.2	Evaluation Mission
 
