@@ -47,160 +47,86 @@ By testing our project we provide:
 
    With automated testing, you're able to check if the application is working properly. Only if everything works, your application will be deployed and public to the real users. So the user always has the guarantee, that the application will worl properly.
    
-
 ### 2.2	Evaluation Mission
+The goals of testing are the following:
+
+* Software for the user is always stable
+* Prevent bugs
+* Verify the specification
 
 ### 2.3	Test Motivators
+* Mrs. Berkling and our grades
+* User is happy with the software (no bugs)
 
 ## 3.	Target Test Items
-The listing below identifies those test items-software, hardware, and supporting product elements that have been identified as targets for testing. This list represents what items will be tested. 
+The listing below identifies those test items-software, hardware, and supporting product elements -that have been identified as targets for testing. This list represents what items will be tested. 
+
+* UI
+* RESTful-API
+* Functionality Testing
 
 ## 4.	Outline of Planned Tests
 
 ### 4.1	Outline of Test Inclusions
+* Cucumber UI-Testing
+* JUnit-Testing
 
 ### 4.2	Outline of Other Candidates for Potential Inclusion
+* Dredd-Testing
+* User-Testing
 
 ### 4.3	Outline of Test Exclusions
+* Stress testing (bad server hardware)
 
 ## 5.	Test Approach
-
+We commonly will do *integration testing* and *Unit testing*.
 ### 5.1	Initial Test-Idea Catalogs and Other Reference Sources
-
+n/a
 ### 5.2	Testing Techniques and Types
 
 #### 5.2.1	Data and Database Integrity Testing
-
-| Some Title | Some Title |
-| ---------- | ---------- | 
-| Technique Objective | |
-| Technique | |
-| Oracles | |
-| Required Tools | |
-| Succes Criteria | |
-| Special Considerations | |
+| Technique Objective | Technique | Oracles | Required Tools | Succes Criteria | Special Considerations |
+| ------------------- | --------- | ------- | -------------- | --------------- | ---------------------- |
+| Testing if the database follows the implementation in the code | Test at startup if the database structure follows the data type definitions in Django | The Backend knows exactly the structure of the database and therefore is able to interact easily with it | Django | No differences between Django models and database models | will be done at every server-start |
 
 #### 5.2.2	Function Testing
 
-| Some Title | Some Title |
-| ---------- | ---------- | 
-| Technique Objective | |
-| Technique | |
-| Oracles | |
-| Required Tools | |
-| Succes Criteria | |
-| Special Considerations | |
+| Technique Objective | Technique | Oracles | Required Tools | Succes Criteria | Special Considerations |
+| ------------------- | --------- | ------- | -------------- | --------------- | ---------------------- |
+| Testing if the UI fits the expectations | Writing feature files, which describe in natural language, how the user will work with the application | The User is happy, that he can use our application | Cucumber, Selenium | All feature file will run flawlessly on our UI | Will run before every deployment |
  
 #### 5.2.3	Business Cycle Testing
-
-| Some Title | Some Title |
-| ---------- | ---------- | 
-| Technique Objective | |
-| Technique | |
-| Oracles | |
-| Required Tools | |
-| Succes Criteria | |
-| Special Considerations | |
-
+n/a
  
 #### 5.2.4	User Interface Testing
 
-| Some Title | Some Title |
-| ---------- | ---------- | 
-| Technique Objective | |
-| Technique | |
-| Oracles | |
-| Required Tools | |
-| Succes Criteria | |
-| Special Considerations | |
+| Technique Objective | Technique | Oracles | Required Tools | Succes Criteria | Special Considerations |
+| ------------------- | --------- | ------- | -------------- | --------------- | ---------------------- |
+| Let the user click through our application to verify that the usabilty is good enough | Several Users should work with our application for a week to verify everything is working and they can interact with the UI | The User is happy, that he can use our application and it is wasy to use | User | Users will say that they can use our application with ease | Will be done manually by asking different Person to test our application |
 
 #### 5.2.5	Performance Profiling 
-
-| Some Title | Some Title |
-| ---------- | ---------- | 
-| Technique Objective | |
-| Technique | |
-| Oracles | |
-| Required Tools | |
-| Succes Criteria | |
-| Special Considerations | |
+n/a
 
 #### 5.2.6	Load Testing
-
-| Some Title | Some Title |
-| ---------- | ---------- | 
-| Technique Objective | |
-| Technique | |
-| Oracles | |
-| Required Tools | |
-| Succes Criteria | |
-| Special Considerations | |
+n/a
 
 #### 5.2.7	Stress Testing
-
-| Some Title | Some Title |
-| ---------- | ---------- | 
-| Technique Objective | |
-| Technique | |
-| Oracles | |
-| Required Tools | |
-| Succes Criteria | |
-| Special Considerations | |
+n/a
  
 #### 5.2.8	Volume Testing
-
-| Some Title | Some Title |
-| ---------- | ---------- | 
-| Technique Objective | |
-| Technique | |
-| Oracles | |
-| Required Tools | |
-| Succes Criteria | |
-| Special Considerations | |
+n/a
 
 #### 5.2.9	Security and Access Control Testing
-
-| Some Title | Some Title |
-| ---------- | ---------- | 
-| Technique Objective | |
-| Technique | |
-| Oracles | |
-| Required Tools | |
-| Succes Criteria | |
-| Special Considerations | |
+n/a
 
 #### 5.2.10	Failover and Recovery Testing
-
-| Some Title | Some Title |
-| ---------- | ---------- | 
-| Technique Objective | |
-| Technique | |
-| Oracles | |
-| Required Tools | |
-| Succes Criteria | |
-| Special Considerations | |
+n/a
 
 #### 5.2.11	Configuration Testing
-
-| Some Title | Some Title |
-| ---------- | ---------- | 
-| Technique Objective | |
-| Technique | |
-| Oracles | |
-| Required Tools | |
-| Succes Criteria | |
-| Special Considerations | |
+n/a
 
 #### 5.2.12	Installation Testing
-
-| Some Title | Some Title |
-| ---------- | ---------- | 
-| Technique Objective | |
-| Technique | |
-| Oracles | |
-| Required Tools | |
-| Succes Criteria | |
-| Special Considerations | |
+n/a
 
 ## 6.	Entry and Exit Criteria
 
