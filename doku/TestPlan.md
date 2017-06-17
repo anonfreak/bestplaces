@@ -8,10 +8,14 @@ This Test Plan for the BestPlaces - Project supports the following objectives:
 * Automated backend and frontend testing
 
 ### 1.2	Scope
+* Acceptance Testing *
+* UI Acceptance Testing with Cucumber
+
 *Integration Testing*
 * Dredd will use the sample data provided in API Blueprint to test against the real API
-* UI-Testing with Cucumber supported by the feature-files
-* TeamCity for automated testing while deploying
+
+*Data and Database Integrity testing*
+* Django will always check if the database ist set up correctly by using its model definitions
 
 *Unit tests*
 * Unit Tests in the backend with Django
@@ -104,30 +108,6 @@ n/a
 | ------------------- | --------- | ------- | -------------- | --------------- | ---------------------- |
 | Let the user click through our application to verify that the usabilty is good enough | Several Users should work with our application for a week to verify everything is working and they can interact with the UI | The User is happy, that he can use our application and it is wasy to use | User | Users will say that they can use our application with ease | Will be done manually by asking different Person to test our application |
 
-#### 5.2.5	Performance Profiling 
-n/a
-
-#### 5.2.6	Load Testing
-n/a
-
-#### 5.2.7	Stress Testing
-n/a
- 
-#### 5.2.8	Volume Testing
-n/a
-
-#### 5.2.9	Security and Access Control Testing
-n/a
-
-#### 5.2.10	Failover and Recovery Testing
-n/a
-
-#### 5.2.11	Configuration Testing
-n/a
-
-#### 5.2.12	Installation Testing
-n/a
-
 ## 6.	Entry and Exit Criteria
 
 ### 6.1	Test Plan
@@ -190,6 +170,10 @@ The following base software elements are required in the test environment for th
 
 | Software Element Name | Version | Type and Other Notes |
 | --------------------- | ------- | -------------------- |
+| Django | 1.1.0 | - |
+| Dredd | 3.5.1 | With API Blueprint |
+| JUnit | latest | - |
+| Selenium | latest | - |
 
 ### 9.3	Productivity and Support Tools
 The following tools will be employed to support the test process for this Test Plan.
@@ -210,40 +194,11 @@ This table shows the staffing assumptions for the test effort.
 
 Human Resources
 
-| Role | Minimum Resources Recommended(number of full-time roles allocated) | Specific Responsibilities or Comments |
-| ---- | ------------------------------------------------------------------ | ------------------------------------- |
-| Test Manager | | Provides management oversight. Responsibilities include: <ul><li> planning and logistics</li> <li>agree mission </li><li> identify motivators </li> <li>acquire appropriate resources</li><li>present management reporting</li><li>advocate the interests of test</li><li>evaluate effectiveness of test effort</li></ul> |
-| Test Analyst | | Identifies and defines the specific tests to be conducted. Responsibilities include: <ul><li>identify test ideas </li><li>define test details</li><li>determine test results</li><li>document change requests</li><li>evaluate product quality</li></ul>|
-| Test Designer | | Defines the technical approach to the implementation of the test effort. Responsibilities include: <ul><li>define test approach</li><li>define test automation architecture</li><li>verify test techniques</li><li>define testability elements</li><li>structure test implementation</li></ul>|
-| Tester | | Implements and executes the tests. Responsibilities include:<ul><li>implement tests and test suites</li><li>execute test suites</li><li>log results</li><li>analyze and recover from test failures</li><li>document incidents</li></ul>|
-| Test System Administrator | | Ensures test environment and assets are managed and maintained. Responsibilities include:<ul><li>administer test management system</li><li>install and support access to, and recovery of, test environment configurations and test labs</li></ul>|
-| Database Administrator, Database Manager | | Ensures test data (database) environment and assets are managed and maintained. Responsibilities include: <ul><li>support the administration of test data and test beds (database)</li></ul>|
-| Designer | | Identifies and defines the operations, attributes, and associations of the test classes. Responsibilities include:	defines the test classes required to support testability requirements as defined by the test team |
-| Implementer |	| Implements and unit tests the test classes and test packages. Responsibilities include:<ul><li>creates the test components required to support testability requirements as defined by the designer</li></ul> |
-
-### 10.2	Staffing and Training Needs
-This section outlines how to approach staffing and training the test roles for the project.
+Have a look at the SRS.
 
 ## 11.	Iteration Milestones
 
-| Milestone | Planned Start Date | Actual Start Date | Planned End Date | Actual End Date |
-| --------- | ------------------ | ----------------- | ---------------- | --------------- |
-| Iteration Plan agreed	|||||			
-|Iteration starts|||||			
-|Requirements baselined	|||||			
-|Architecture baselined	|||||			
-|User Interface baselined|||||				
-|First Build delivered to test|||||			
-|First Build accepted into test	|||||			
-|First Build test cycle finishes|||||			
-|[Build Two will not be tested]	|||||		
-|Third Build delivered to test|||||		
-|Third Build accepted into test	|||||			
-|Third Build test cycle finishes|||||			
-|Fourth Build delivered to test	|||||		
-|Fourth Build accepted into test|||||			
-|Iteration Assessment review|||||		
-|Iteration ends|||||	
+Not needed due to Continious Integration.
 
 ## 12.	Risks, Dependencies, Assumptions, and Constraints
 
