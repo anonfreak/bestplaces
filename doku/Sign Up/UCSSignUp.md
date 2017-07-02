@@ -9,6 +9,8 @@ username, hometown (to adapt the selection) and password.
 This is the Activity Diagram showing the basic flow of this use case.
 This is the feature file for this use-case:
 ![Feature-file](SignUpFeatureFile.PNG)
+[Link to .feature file](https://github.com/anonfreak/bestplaces-client/blob/master/src/test/features/signup.feature)
+
 Mockup of the Welcome page from which the user can sign up or log in:
 ![MockUp: Welcome Page](WelcomePage.png)
 Mockup of the register form:
