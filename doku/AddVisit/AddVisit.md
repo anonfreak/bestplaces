@@ -8,6 +8,7 @@ A Visit briefly describes the connection between a place and the time, the user 
 ![Flow Diagram](AddVisitFlow.png)
 ### Feature-files
 ![Feature File](AddVisitFeature.PNG)
+[AddVisit Feature File in Git](https://github.com/anonfreak/bestplaces-client/blob/master/src/test/features/excluded/addvisit.feature)
 ### Mock-Ups
 ![Mock-Up](PlacesViewAddVisitMockUp.png)
 ## Special Requirements
