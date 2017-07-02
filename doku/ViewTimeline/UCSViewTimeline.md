@@ -10,6 +10,7 @@ This is the Activity Diagram for showing the visits in the Timeline.
 
 ![Feature](ViewTimelineFeature.PNG)  
 The feature file for “View Timeline”.  
+[Link to .feature file](https://github.com/anonfreak/bestplaces-client/blob/master/src/test/features/viewtimeline.feature)
 
 ![MockUp](MockUpTimeline.JPG)  
 This is the Mockup for the Timeline.
