@@ -8,7 +8,9 @@ of that, this Use-Case is a CRUD.
 ![Basic Event-flow](ManageFavoritesFlow.png)
 This is an Activity Diagram showing how the different parts of Manage Favorites stick together. The single diagrams of the Use Cases will follow later. M1 etc. stands for the corresponding Mock-up to the Use Case.
 ![Feature-file](FavoriteFeature.png)
+
 The feature file, which goes with the CRUD for managing favorites.
+[Link to Favorite Feature File](https://github.com/anonfreak/bestplaces-client/blob/master/src/test/features/excluded/favorites.feature)
 
 Mock-up (M1) showing the Favorite View. To add a visit, press the ‘+’. To delete a favorite, press the heart.
 ![MockUp](FavoriteView.png)
