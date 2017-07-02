@@ -11,6 +11,7 @@ of Manage Visits stick together. The single diagrams of the Use Cases will follo
 
 ![Feature](ManageVisitFeature.PNG)  
 The feature file, which goes with the CRUD for managing favorites.
+[Link to .feature File](https://github.com/anonfreak/bestplaces-client/blob/master/src/test/features/excluded/managevisit.feature)
 
 ![MockUp](../ViewTimeline/MockUpTimeline.JPG)  
 This is the first Mockup for List Visits. This is just the Timeline View, described in the use case document
