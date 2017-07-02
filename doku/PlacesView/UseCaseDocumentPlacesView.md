@@ -8,6 +8,7 @@ Therefore it's the second most import part of our application, right after the T
 ![Flow Diagram](PlacesViewFlow.png)
 ### Feature-files
 ![Feature File](PlacesFeature.PNG)
+[Link to .feature file](https://github.com/anonfreak/bestplaces-client/blob/master/src/test/features/excluded/placesview.feature)
 ### Mock-Ups
 ![Mock-Up](PlacesViewMockUp.png)
 ## Special Requirements
