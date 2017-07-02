@@ -220,15 +220,22 @@ Not needed due to Continious Integration.
 ## 13.	Management Process and Procedures
 
 ### 13.1	Measuring and Assessing the Extent of Testing
+To measure how much we test our application, we use Coveralls,io, which is an online test coverage tool. It uses the test runs, which are executed by the Continious Integration Tool Travis CI and by using a plugin for Python and Java we're able to create detailed test reports, which are send to Coveralls. So we always know how good our test coverage is right now and also everybody on our repo is able to see the test coverage, by looking at our coveralls-badge.
 
 ### 13.2	Assessing the Deliverables of this Test Plan
+n.a.
 
 ### 13.3	Problem Reporting, Escalation, and Issue Resolution
+If Travis recognises a bug in our software, the corresponding manager is notified directly and he has to resolve the issue.
 
 ### 13.4	Managing Test Cycles
+As said before all the testing is done either locally while developing or after pushing to the repo, Travis CI will also run tests on their system against it. Afterwards the reports are send to Coveralls, which gives us the ability to improve the test coverage or to see what's gone wrong.
 
 ### 13.5	Traceability Strategies
 
 ### 13.6	Approval and Signoff
 
-
+### Results of Coveralls
+Just click on the corresponding links to have a look at our Test coverage and also on Travis CI to check if our build is passing:
+Travis CI: [Server](https://travis-ci.org/anonfreak/bestplaces-server) [Client](https://travis-ci.org/anonfreak/bestplaces-client)
+Coveralls.io: [Server](https://coveralls.io/github/anonfreak/bestplaces-server?branch=master) [Client](https://coveralls.io/github/anonfreak/bestplaces-client?branch=master)
