@@ -11,6 +11,7 @@ This is the Activity Diagram for this Use-Case.
 
 ![Feature](SearchingFeature.png)  
 The feature file for “View Timeline”.  
+[Link to .feature file](https://github.com/anonfreak/bestplaces-client/blob/master/src/test/features/searching.feature)
 
 ![MockUp](MockUpSearchingLocation.png)  
 Mock-up showing the search and the location edit feature.
