@@ -11,9 +11,6 @@ This Test Plan for the BestPlaces - Project supports the following objectives:
 * Acceptance Testing *
 * UI Acceptance Testing with Cucumber
 
-*Integration Testing*
-* Dredd will use the sample data provided in API Blueprint to test against the real API
-
 *Data and Database Integrity testing*
 * Django will always check if the database ist set up correctly by using its model definitions
 
@@ -239,3 +236,9 @@ As said before all the testing is done either locally while developing or after 
 Just click on the corresponding links to have a look at our Test coverage and also on Travis CI to check if our build is passing:
 Travis CI: [Server](https://travis-ci.org/anonfreak/bestplaces-server) [Client](https://travis-ci.org/anonfreak/bestplaces-client)
 Coveralls.io: [Server](https://coveralls.io/github/anonfreak/bestplaces-server?branch=master) [Client](https://coveralls.io/github/anonfreak/bestplaces-client?branch=master)
+
+##  Metrics
+We also made up our minds about metrics. Therefore, we integrated a metrics tool called codacy, which hooks into our GitHub-project and listens for a push to the Repository. You are able to look at our Metrics stats by accessing it directly on the website or by clicking the badge at our repos. However, here are the links so you don't waster time on searching:
+
+[Server](https://www.codacy.com/app/kolb.marco/bestplaces-server/dashboard)
+[Client](https://www.codacy.com/app/kolb.marco/bestplaces-client/dashboard)
