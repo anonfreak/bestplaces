@@ -34,13 +34,13 @@ As descriped above, we're having several MVC-patterns. The most important and mo
 ### ODOD process
 ODOD means on-demand-own-data, which is used to keep our database as small as possible. To gather live information on a place, we will use the Google Places API, but if a user is able to provide better or current information, we will store that locally, until Google updated their place-information. This way we always provide most current data, while keeping our data storage consumption low.
 ## Deployment View
-Our application will be deployed on a self-hosted linux-server, which provides full control over our application to track bugs and to keep data safe on our servers.
+Our Application usees Travis CI and Lifecycle-management to ensure an automatic deployment process. This is integrated on both the client and the server side. On both sides, we test our Applications with Travis and send the reports to Coveralls to get the test coverage. After the tests succeed, we're ready to deploy our Applications to different platforms.
 ### Server
-The server will be deployed as a django-aplication, which mainly contains all python-scripts pushed to GitHub. Our server listens for changes on the master branch of the server repository and if there is a change, it will automatically clone the repository and run the server.
+The server application will be deployed to Heroku, which is a Platform-as-a-Service-Provider and gives us the ability to run our application in a scaleable cloud environment with global access. Travis CI provides an implementation for deploying Heroku-applications directly to Heroku.
 Everybody on the web is able to communicate with our API, by following our API-Description. Nevertheless, you need user credentials to use the API. This ensures that user data is safe. Below this process is depicted to better understand it.
 ![Deployment View Server](./deploymentViewServer.png)
 ### Client
-The Client is deployed as a war-file to our self-hosted Apache Tomcat server. To deploy to this server, there is an easy maven script in the IntelliJ-IDE, which directly builds, pushs and deploys the war to the server and immediatly run it there.
+The Client is deployed as a war-file to our self-hosted Apache Tomcat server. To deploy to this server, Travis will run a maven goal from the tomcat-8 plugin for maven, which gives Maven the ability to deploy our application to nearly any Tomcat-Server in the web. 
 Also this process is depicted below:
 ![Deployment View Client](./deploymentViewClient.png)
 ## Implementation View
