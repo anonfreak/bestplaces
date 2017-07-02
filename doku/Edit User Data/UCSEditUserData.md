@@ -14,6 +14,7 @@ Mockup:
 Feature File:
 
 ![Feature-file](FeatureEditUserData.png)
+[Link to EditUserData Feature File](https://github.com/anonfreak/bestplaces-client/blob/master/src/test/features/edituserdata.feature)
 ### Alternative Flows
 n/a
 ## Special Requirements
