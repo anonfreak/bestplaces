@@ -38,12 +38,13 @@ Our project is only by time, effort and missing work equipment restricted. There
 ## Specific Requirements
 ### Functionality
 #### User-Management
-The user-management includes everything concerning the management of the users. These should be able to sign-up and log-in to the service and their data should be stored in the database. Therefore, it should be possible for the user to have exact data on all devices.
+The user-management includes everything concerning the management of the users. These should be able to sign-up and log-in to the service and their data should be stored in the database. Therefore, it should be possible for the user to have exact data on all devices. [Use-Case Document for Sign-up](https://github.com/anonfreak/bestplaces/blob/master/doku/Sign%20Up/UCSSignUp.md) and [Use-case Document for Edit User Data](https://github.com/anonfreak/bestplaces/blob/master/doku/Edit%20User%20Data/UCSEditUserData.md)
 #### Search
 To make it easier for the user to find and track places without providing all information by themselves, there should be a small search engine for these places. Further information:
 [Use-Case Document for Searching](https://github.com/anonfreak/bestplaces/blob/master/doku/searching/Use%20Case%20Specification%20Searching.pdf)
+After searching for places the User can click at them to see more information about this place. This is described in detail in following document. [Use-case document GetInformation](https://github.com/anonfreak/bestplaces/blob/master/doku/ManageVisits/UCSManageVisits.md)
 #### Timeline (Tracking Places)
-The “Timeline” displays all places, the user visited and the user may plans to visit (with fixed date) in the future. It will be displayed after logging in. To track places, the user should have the ability to add and edit his places.
+The “Timeline” displays all places, the user visited and the user may plans to visit (with fixed date) in the future. It will be displayed after logging in. To track places, the user should have the ability to add and edit his places. [Use-case Document for View Timeline](https://github.com/anonfreak/bestplaces/blob/master/doku/ViewTimeline/UCSViewTimeline.md), [Use-case Document for Add Visit](https://github.com/anonfreak/bestplaces/blob/master/doku/AddVisit/AddVisit.md) and [Use-case Document for Manage Visits](https://github.com/anonfreak/bestplaces/blob/master/doku/ManageVisits/UCSManageVisits.md) 
 #### Favorites
 The user should be able to save their favorite places and places they may want to visit in the future, but without defining any date.
 [Use-Case Document for Favorites](https://github.com/anonfreak/bestplaces/blob/master/doku/Favorites/Use%20Case%20Specification%20Manage%20Favorites.pdf)
