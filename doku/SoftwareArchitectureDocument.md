@@ -27,10 +27,26 @@ As described in the use-case documentation, favorites for places can be set by t
 The client itself has to map this JSON-models on Java-models to present them. Therefore we use jackson as an object-mapper, which simplifys and automates this process.
 ## Logical View
 ### Overview
-As descriped above, we're having several MVC-patterns. First the server-client seperation which is shown in following diagram [HIER KOMMT DAS BILD REIN] 
+As descriped above, we're having several MVC-patterns. First the server-client seperation which is shown in following diagram
+
+![HIER KOMMT DAS BILD REIN](./AbstractMVC.png)
+
 The second one is the MVC-Pattern of the Client. It ensures, that the client intern logic is seperated from the classes who represents the models just as they are defined in the database and the classes which finally includes the code which generates the GUI. But the most important and most effective one is the MVC-Pattern of the server, because the whole magic happens there. Below you can see the class-diagram of our django-based server. The marked regions emphasize the models, controllers and views.
 ![Server MVC](./serverClassDiagram.png)
 ### Architecturally Significant Design Packages
+#### Factory Pattern
+Django uses the Factory Pattern to define their models. These models are Python objects, but with some definitions, using factory pattern, we're at the same time able to generate the database schema and check against it, as well as operating with the database by modifying Django models in Python code. Below is an example how we use the factory pattern:
+```python
+class Place(models.Model):
+    placeid = models.CharField(db_column='placeId', primary_key=True, max_length=28)  # Field name made lowercase.
+    additional_information = JSONField(db_column='additionalInformation', blank=True, null=True)  # Field name made lowercase. This field type is a guess.
+
+    class Meta:
+        managed = True
+        db_table = 'Place'
+```
+So here we define the Place-model by using Factory pattern to generate the fields of the model. Python itself is typeless, but relational databases require strict types and structure for the data inside of it. Therefore we strictly define how our Model should look like and should be stored in database by providing all informations in the field initialization at the beginning of the Django Object. If you'd like to see more of it just look at our database definition models on [GitHub](https://github.com/anonfreak/bestplaces-server/blob/master/BestPlaces/dbModels.py).
+Because this is provided by Django itself, we cannot show you a Class Diagramm, because it would be useless. Code is speaking here.
 ## Process View
 ### ODOD process
 ODOD means on-demand-own-data, which is used to keep our database as small as possible. To gather live information on a place, we will use the Google Places API, but if a user is able to provide better or current information, we will store that locally, until Google updated their place-information. This way we always provide most current data, while keeping our data storage consumption low.
