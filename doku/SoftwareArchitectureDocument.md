@@ -27,7 +27,8 @@ As described in the use-case documentation, favorites for places can be set by t
 The client itself has to map this JSON-models on Java-models to present them. Therefore we use jackson as an object-mapper, which simplifys and automates this process.
 ## Logical View
 ### Overview
-As descriped above, we're having several MVC-patterns. The most important and most effective one is the MVC-Pattern of the server, because the whole magic happens there. Below you can see the class-diagram of our django-based server. The marked regions emphasize the models, controllers and views.
+As descriped above, we're having several MVC-patterns. First the server-client seperation which is shown in following diagram [HIER KOMMT DAS BILD REIN] 
+The second one is the MVC-Pattern of the Client. It ensures, that the client intern logic is seperated from the classes who represents the models just as they are defined in the database and the classes which finally includes the code which generates the GUI. But the most important and most effective one is the MVC-Pattern of the server, because the whole magic happens there. Below you can see the class-diagram of our django-based server. The marked regions emphasize the models, controllers and views.
 ![Server MVC](./serverClassDiagram.png)
 ### Architecturally Significant Design Packages
 ## Process View
